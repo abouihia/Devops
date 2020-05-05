@@ -1,0 +1,14 @@
+# use after this docker containe start idConatiner
+
+version: '3.1'
+#e1791a9320a244eda02d2f2811b00b71 key
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    ports:
+      - "8080:8080"   #http://localhost:8080/
+      - "50000:50000"
+    volumes:
+      - /tmp/jenkins:/var/jenkins_home jenkins
+
+
