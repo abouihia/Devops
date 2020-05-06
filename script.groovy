@@ -13,6 +13,9 @@ node {
            stage('Sonar'){
               sh 'echo brahim BodyAttak'
           }
+          stage('Sonar-quality'){
+              sh 'echo brahim BodyAttak'
+          }
     }finally{
        cleanWs() 
     }
