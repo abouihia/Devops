@@ -1,0 +1,1 @@
+docker run -ti --name apirun --network postgresql_generator  -v /tmp/maven/application.properties:/etc/application.properties  -p 8081:8081 brahimjdk:1.0  java -jar jar/myapp1-0.0.1-XXX.jar --spring.config.location=file:/etc/application.properties
